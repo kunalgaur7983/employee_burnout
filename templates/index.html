@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading">EMPLOYEE BURNOUT PREDICTION</h1>
+    <h2 class="center">
+        
+        <span class="change_content"> </span>
+    </h2>
+    <h2 class="center" id="top">Check out your Burnout Score Here!</h2>  
+    <form method="post" action="/predict">
+        <section class="firstdiv">
+            <div class="box">
+                <h3>What is Your Gender?</h3><br>
+                <select name="gender" id="gender" required="required">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="box">
+                <h3>What is Your Company Type?</h3><br>
+                <select name="company_type" id="company_type" required="required">
+                <option value="Service">Service</option>
+                <option value="Product">Product</option>
+                </select>
+            </div>
+            <div class="box">
+                <h3>Is your Work From Home Setup available?</h3><br>
+                <select name="wfh_setup_avail" id="wfh_setup_avail" required="required">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="seconddiv">
+            <div class="box">
+                <h3>What is the value of Your Designation?</h3><br>
+                <h4>Seniority level of the employee in codes</h4><br>
+                <select name="Designation" id="Designation" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                </select>
+            </div>
+                
+            <div class="box">
+                <h3>What is your Quarter?</h3><br>
+                <h4>Quarter refers to one-fourth of a year</h4><br>
+                <select name="Quarter" id="Quarter" required="required">
+                <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <h3>What was the Season when you joined?</h3><br>
+                <select name="Season" id="Season" required="required">
+                <option value="Autumn">Autumn</option>
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+                <option value="Winter">Winter</option>
+                </select>
+            </div>
+        </section>
+        
+
+        <section class="thirddiv">
+            <div class="box">
+                <h3>What is the Resource Allocation?</h3><br>
+                <h4>Hours allocated per day</h4><br>
+                <select name="res_al" id="res_al" required="required">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <h3> What is your mental fatigue score?</h3><br>
+                <h4>Stress rating provided by employees</h4><br>
+                <input id="men_fatigue_score" name="men_fatigue_score" required="required">
+            </div>
+
+            <div class="box">
+                <h3> What is your month of joining?</h3><br>
+                <select name="mon_of_join" id="mon_of_join" required="required">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            </div>
+        </section>
+         <div class = "center">
+            <br><button id="sub" type="submit " class="center">Calculate Your Burnout Score </button>
+         </div>
+         
+    </form>
+</body>
+</html>

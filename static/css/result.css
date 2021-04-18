@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+h2{
+    
+    color: black;
+}
+
+body{
+    background-image: url(burnout-signs-and-survival-guide.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.resultbox{
+    position: relative;
+}
+
+.firstdiv{
+    margin: 9px;
+    /* display: flex; */
+    align-items: center;
+
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 23px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.firstdiv .change_content{
+    padding: 10px;
+    margin: 3px 23px;
+    /* border-radius: 28px; */
+    /* background: rgb(242, 242, 242, .7); */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: xx-large;
+    text-overflow: unset;
+    
+}
+.reduce{
+    padding: 10px;
+    color: white;
+
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    margin: 17px;
+    border-radius: 12px;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: red;
+    /* text-shadow: 2px 2px 5px black; */
+    /* padding-bottom: 15px; */
+    text-align: center;
+
+    
+}
+@keyframes changetext{
+    0%{content: "Try not to think about what’s burning you out and make the time you spend with loved ones positive and enjoyable.";}
+    20%{content: "Limit your contact with negative people. Hanging out with negative-minded people who do nothing but complain will only drag down your mood and outlook.";}
+    40%{content: "Nourish your creative side. Creativity is a powerful antidote to burnout. Try something new, start a fun project, or resume a favorite hobby.";}
+    60%{content: "Support your mood and energy levels with a healthy diet and  Keep your cool in stressful situations by getting a good night’s sleep.";}
+    80%{content: "Make exercise a priority Even though it may be the last thing you feel like doing when you’re burned out, exercise is a powerful antidote to stress and burnout.";}
+    100%{content: "Get plenty of sleep. Feeling tired can exacerbate burnout by causing you to think irrationally.";}
+}

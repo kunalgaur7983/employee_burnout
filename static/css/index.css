@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+    margin: 30px 0 20px 0;
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(255, 9, 9);
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-family:'Lobster', cursive;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+body{
+    background-image: url(Yardi-Blog-remote-employee-burnout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h3{
+    font-size: 23px;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px red;
+}
+
+#sub{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+#sub:hover{
+    background: white;
+    color: red;
+    border: 2px solid red;
+}
+
+
+
+.firstdiv{
+    margin: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.firstdiv .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 23px;
+    border-radius: 28px;
+    background: rgb(242, 242, 242, .7);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.seconddiv{
+    margin: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.seconddiv .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 23px;
+    border-radius: 28px;
+    background: rgb(242, 242, 242, .7);
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    /* text-shadow: 1px 1px 2px white; */
+}
+
+.thirddiv{
+    margin: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.thirddiv .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 23px;
+    border-radius: 28px;
+    background: rgb(242, 242, 242, .7);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+#gender{
+    color: white;
+    background-color: red;
+}
+
+#company_type{
+    color: white;
+    background-color: red;
+}
+
+#wfh_setup_avail{
+    color: white;
+    background-color: red;
+}
+
+#Designation{
+    color: white;
+    background-color: red;
+}
+
+#Quarter{
+    color: white;
+    background-color: red;
+}
+
+#Season{
+    color: white;
+    background-color: red;
+}
+
+#res_al{
+    color: white;
+    background-color: red;
+}
+
+#men_fatigue_score{
+    color: white;
+    background-color: red;
+}
+
+#mon_of_join{
+    color: white;
+    background-color: red;
+}
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: aqua;
+    text-shadow: 2px 1px 5px black;
+    padding-bottom: 15px;
+}
+@keyframes changetext{
+    0%{content: "Feeling tired and drained most of the time??";}
+    25%{content: "Change in appetite or sleep habits??";}
+    50%{content: "Feeling helpless, trapped, and defeated??";}
+    75%{content: "feeling incapable and unproductive in your tasks??";}
+    100%{content: "Want to know how much exhausted you are??";}
+    
+}
+
+#top{
+    padding-top: 20px;
+    color: black;
+    text-shadow: 2px 1px 5px aqua;
+}
